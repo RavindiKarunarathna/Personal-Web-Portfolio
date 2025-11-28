@@ -1,0 +1,49 @@
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background: linear-gradient(to bottom, #89c8e8, #6d6e6e);
+    color: #E8EAED;
+}
+
+.navbar-glass {
+    background: rgba(20, 20, 21, 0.6);
+    backdrop-filter: blur(10px);
+}
+
+.card-glass {
+    background: rgba(56, 56, 56, 0.08);
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, .12);
+}
+
+/* .gradient-text {
+  background: linear-gradient(90deg, #7C3AED, #06B6D4);
+  -webkit-background-clip: text;
+  color: transparent;
+} */
+.bg-blob,
+.bg-blob.blob-2 {
+    position: fixed;
+    width: 60vmax;
+    height: 60vmax;
+    border-radius: 50%;
+    background: radial-gradient(closest-side, rgba(124, 58, 237, .35), transparent 70%);
+    filter: blur(40px);
+    animation: float 18s ease-in-out infinite;
+    z-index: -1;
+}
+
+.bg-blob.blob-2 {
+    background: radial-gradient(closest-side, rgba(20, 184, 166, .25), transparent 70%);
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    50% {
+        transform: translate(-5%, 4%) scale(1.05);
+    }
+}
